@@ -2,6 +2,7 @@ import { API_URL, KEY } from './config';
 // import { getJSON, sendJSON } from './helpers';
 import { AJAX } from './helpers';
 import { RES_PER_PAGE } from './config';
+import { clearLine } from 'readline';
 
 export const state = {
   recipe: {},
@@ -47,6 +48,7 @@ export const loadRecipe = async function (id) {
 export const loadSearchResults = async function (query) {
   try {
     state.search.query = query;
+    // 1312122212312
     const data = await AJAX(`${API_URL}?search=${query}`);
 
     state.search.results = data.data.recipes.map(rec => {
