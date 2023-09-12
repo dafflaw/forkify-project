@@ -45,6 +45,10 @@ export const loadRecipe = async function (id) {
   }
 };
 
+export const newFunction = function () {
+  console.log('Welcome to our web application');
+};
+
 export const loadSearchResults = async function (query) {
   try {
     state.search.query = query;
