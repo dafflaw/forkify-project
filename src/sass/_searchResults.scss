@@ -29,6 +29,13 @@
   }
 }
 
+.pagination__content {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  font-weight: 600;
+}
+
 .copyright {
   color: $color-grey-dark-2;
   font-size: 1.2rem;
